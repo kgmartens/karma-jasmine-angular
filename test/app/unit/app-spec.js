@@ -10,7 +10,7 @@ describe('App app', function(){
 		expect(module).toBeDefined();
 	});
 	
-	xit('has a $echoService dependency', function() {
+	it('has a $echoService dependency', function() {
 		expect(module.requires).toContain('$echoService');
 	});
 	
