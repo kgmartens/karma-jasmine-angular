@@ -10,8 +10,15 @@ describe('app service', function() {
 		});
 	}
 );
-	
-	it('echoes', function() {
+	it('is defined', inject(function(echoService){
+		expect(echoService).toBeDefined();
+	}));
+
+	it('echoes as expected', inject(function(echoService){
+		expect(echoService.echo('blah')).toEqual('blah');
+	}));
+
+	xit('echoes', function() {
 		expect(thelocalservice.echo('some text')).toBe('some text');
 	});
 });

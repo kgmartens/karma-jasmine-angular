@@ -1,8 +1,8 @@
-//main app and dependencies
+//main app and dependenciescd
 
 angular.module('app',
 	[	
-	 	'$echoService'
+	 	'echoService'
 	]
 );
 
